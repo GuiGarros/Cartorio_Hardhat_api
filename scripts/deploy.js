@@ -6,7 +6,7 @@ async function main() {
   const [deployer] = await hre.ethers.getSigners()
  // const CasaToken = await hre.ethers.deployContract("CasaToken");
   const Cartorio = await hre.ethers.deployContract("Cartorio");
-  console.log("aqui");
+
   await Cartorio.waitForDeployment();
 
   //await CasaToken.waitForDeployment();
